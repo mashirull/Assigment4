@@ -1,0 +1,1354 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0px;
+    font-family: Dosis;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* =======-------home section start here---------============== */
+
+.home_container{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg);
+    background-attachment: fixed,scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:565px;
+    position: relative;display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+}
+
+
+
+.blur{
+    height:565px ;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.38);
+}
+
+/* =========-------nabar start here--------============= */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-self: center;
+   background-color: #fff;
+   padding: 0px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 2%;
+   box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   padding-left: 20px ;
+   padding-top: 25px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    height: 82px;
+    width: 12%;
+    background-color: #e47312;
+    cursor: pointer;
+}
+.logo img{
+    padding-top: 15px;
+    padding-left: 13px;
+    width: 60%;
+}
+
+.navbar .menu_items ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .menu_items{
+    margin-right: 14%;
+}
+
+.menu_items .active{
+    color: #e47312;
+}
+
+.navbar .menu_items ul li{
+    padding: 32px 10px;
+    margin: 0px 5px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 550;
+    text-transform: uppercase;
+    display: flex;
+    Font-Family:Dosis;
+}
+.navbar .menu_items ul li i{
+    padding-left: 6px;
+    font-size: 13px;
+    color: #858588;
+}
+
+.navbar .menu_items ul li:hover{
+    color: #e47312;
+}
+
+.navbar .menu_items ul li:hover .dropdown li{
+    color: black;
+    font-weight: 500;
+}
+
+.navbar .menu_items ul li .dropdown{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px ;
+    right: 105px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    display: none;
+    
+}
+.navbar .menu_items ul li .dropdown li{
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.navbar .menu_items ul li:last-child:hover .dropdown{
+    display: block;
+}
+
+.navbar .menu_items ul li:last-child:hover i{
+    color: #858588;
+}
+
+.navbar .menu_items ul li .dropdown li:hover{
+    background-color: aliceblue;
+    color:#e47312;
+}
+
+.navbar .nav_right_end{
+    position: absolute;
+    top: 0px ;
+    right: 0px;
+    bottom: 0px;
+    padding: 30px 20px;
+    background-color: #e47312;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    Font-Family:Dosis
+}
+.navbar .nav_right_end:hover{
+    background-color: #e68734;
+}
+
+.burger{
+    margin-right: 20px;
+    display: none;
+}
+
+.burger .line{
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 10px;
+}
+/* =========-------nabar end here--------============= */
+
+
+.heading_text h1{
+    font-weight: 600;
+    font-size: 62px;
+    color: #fff;
+    line-height:70px ;
+    z-index: 999;
+
+ }
+
+ .heading_text p{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    line-height: 38px;
+    z-index: 999;
+ }
+
+ .heading_text button{
+    padding: 18px 38px;
+    margin-top: 30px;
+    background-color: #e47312;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    font-family: Dosis;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: bold;
+    z-index: 999;
+ }
+
+
+.info_container{
+    display: flex;
+    position: absolute;
+    bottom: -70px;
+    right: 0px;
+    color: white;
+    background-image: linear-gradient(15deg,#fd655c,#e47312);
+}
+
+.info_container .info_box{
+    padding:45px 90px;
+    text-align: center;
+}
+
+
+.info_container .info_box i{
+    font-size: 20px;
+    padding: 8px 0px;
+}
+
+.info_container .info_box h3{
+    line-height: 35px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.info_container .info_box p{
+    line-height: 30px;
+    color: #cec5c2;
+}
+
+.info_container .info_box .hover{
+    border-bottom: 3px solid #e47312;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+}
+
+.info_container .info_box .hover:hover{
+    border-bottom: 3px solid #fff;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    bottom: 159px ;
+    right: 0px;
+}
+
+.social_media i{
+    padding: 18px;
+    border-bottom: 0.1px solid rgb(97, 96, 96);
+    font-size: 14px;
+    cursor: pointer;
+}
+.social_media i:last-child{
+    border-bottom: none
+}
+
+
+
+/* =======-------home section end here---------============== */
+
+
+/* ======---------services section start here----------======= */
+.services_main_container{
+    position: relative;
+    padding: 14% 5%;
+}
+
+.blur_tittle{
+    color: rgba(241, 241, 247, 0.4);
+    font-size: 82px;
+    font-weight: bold;
+    position: absolute;
+    top: 104px ;
+    left: 0px;
+    letter-spacing: 10px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading .main_heading h1{
+    font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+
+.heading .main_heading{
+    z-index: 999;
+}
+
+.heading .side_heading_anchor-tag a{
+    text-decoration: none;
+    color: #979695;
+    padding: 7px 0px;
+}
+
+.heading .side_heading_anchor-tag a:hover{
+    border-bottom: 2px solid #e47312;
+}
+
+.heading .side_heading_anchor-tag h3{
+    font-weight:500;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service_display-flex{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.service-box{
+    padding: 25px 0px;
+    margin-right: 20px;
+
+}
+
+.service-box h2{
+    font-size: 17px ;
+    font-weight: 550;
+    text-transform: uppercase;
+    line-height: 3;
+}
+.service-box p{
+    line-height: 1.65;
+    font-size: 17px;
+    font-weight: 500;
+    color: #989a9e;
+    margin-bottom: 20px;
+}
+
+.service-box a{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 0px ;
+    text-transform: uppercase;
+    color: #989a9e;
+    font-weight: 600;
+
+}
+
+.service-box a:hover{
+    border-bottom: 2px solid #e47312;
+}
+
+.service-box img{
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+/* ======---------services section end here----------======= */
+
+/* ==========--------about section start here--------========= */
+
+.about_main_container{
+    padding: 0% 5%;
+}
+.img_content_box{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.img_content_box .image{
+    width: 45%;
+    height: 380px;
+    vertical-align: middle;
+    align-items: center;
+    
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.about_content{
+    width: 40%;
+   padding:10px 0px;
+    position: relative;
+    height: auto;
+    height: fit-content;
+}
+
+.about_content p{
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(145, 145, 151);
+    padding-top: 35px;
+    padding-bottom: 30px;
+
+}
+
+.about_content a{
+    color:rgb(145, 145, 151) ;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 0px;
+    border-bottom: 2px solid  white;
+}
+.about_content a:hover{
+    border-bottom: 2px solid  #e47312;
+}
+
+.a_blr{
+    top: -83px;
+}
+
+.flex_about_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_box_a{
+   padding-top: 80px;
+   padding-bottom: 80px;
+
+}
+
+
+.flex_box_a h2{
+    font-size: 65px;
+    color: #e47312;
+    font-weight: 500;
+}
+
+.flex_box_a p{
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(145, 145, 151);
+    padding-top: 15px;
+    
+
+}
+/* ==========--------about section end here--------========= */
+
+
+/* =======--------project section start here--------======== */
+
+
+.project_main_container{
+    position: relative;
+    padding-top: 8%;
+    background-color: #f7f8fc;
+}
+
+.img_container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px 20px ;
+    justify-content: space-between;
+    
+}
+
+.img_box{
+    width: 32%;
+    height: 350px;
+    cursor: pointer;
+   margin-bottom: 25px;
+  
+}
+
+.img1{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/p-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/p-4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img3{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/p-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img4{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/p-6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img5{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/p-5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img6{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/p-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img_box:hover .circle_and_blur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.circle_and_blur{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+   display: none;
+    
+}
+.circle_and_blur .circle_box{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: linear-gradient(15deg,#fd655c,#e47312); 
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.circle_and_blur .circle_box h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+   
+}
+
+.pro_h{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 7%;
+}
+
+.b_pro{
+    top: 10px;
+}
+
+.bg_box{
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+}
+
+.bg_box h1{
+    font-size: 42px;
+    line-height: 2;
+}
+
+.bg_box p{
+    font-size: 20px;
+    line-height: 3;
+    padding-bottom: 10px;
+}
+
+.bg_box a{
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+}
+
+.bg_box a:hover{
+    border-bottom: 2px solid white;
+}
+
+.li_gra_color{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(270deg,#fd645cc9,#e47412e6);
+    padding: 7% 0px;
+}
+
+
+
+
+/* =======--------project section start here--------======== */
+
+
+
+/* ==========---------team container start here--------========== */
+.proffessionals_main_container{
+    padding: 8% 0%;
+    background-color: #f7f8fc;
+    position: relative;
+}
+
+.team_blr{
+    top: 10px;
+}
+
+
+.d_flex_profile_container{
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_card{
+    width: 22%;
+    height:auto ;
+    position: relative;
+}
+
+.bg_box_img1{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+.bg_box_img2{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+.bg_box_img3{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+.bg_box_img4{
+    width: 100%;
+    height: 300px;
+    background-image: url(	https://nuuk-e3eaa.firebaseapp.com/assets/img/team-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+.profile_name{
+    text-align: left;
+    background-color: white;
+    height: 73px;
+    padding: 17px 40px;
+}
+
+.profile_name h1{
+    font-size: 17px;
+    color: rgb(18, 18, 19);
+    line-height: 2;
+    font-weight: 600;
+}
+
+.profile_name h3{
+    font-size: 16px;
+    color: rgb(189, 189, 201);
+    font-weight: 400;
+}
+
+
+.team_s_media{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color:#e47312;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.team_s_media i{
+    padding:15px 13px;
+    font-size: 18px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.14);
+    color: white;
+    cursor: pointer;
+}
+
+.team_s_media i:last-child{
+    border-bottom: none;
+}
+
+/* ==========---------team container end here--------========== */
+
+
+
+
+/* =======-------client section start here-------======= */
+
+.client_main_container{
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color:#f7f8fc ;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.client_profile_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.profile_box{
+    padding: 20px;
+    background-color: white;
+    margin: 5px;
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+    position: relative;
+}
+
+.profile_box h1{
+    font-size: 15px;
+    color: rgb(18, 18, 19);
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.profile_box h1:nth-child(3){
+    color: rgb(189, 189, 201);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.profile_box p{
+    font-size: 17px ;
+    font-weight: 400;
+    color: rgb(145, 145, 151);
+    line-height: 25px;
+}
+
+.profile_box .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(8deg,#fd645cc9,#e47412e6);
+    color: white;
+    padding: 6px;
+    letter-spacing: 2px;
+    font-size: 23px;
+    font-weight: 600;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    font-family: Dosis;
+}
+
+.card1{
+    margin-top: -70px;
+    margin-right: 20px;
+    
+}
+
+.card4{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+
+.c_blr{
+    left: -60px;
+    top: -60px;
+}
+
+/* =======-------client section end here-------======= */
+
+
+
+/* ========--------blog section start here-------========= */
+
+.blog_main_container{
+    padding:7% 5%;
+    position: relative;
+}
+
+.more_top{
+    top: 0px;
+}
+
+.blog_card_container{
+    
+    padding-top: 7%;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.blog_card{
+    width: 32%;
+    position: relative;
+}
+
+.card_bg_img{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/port-1.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card_bg_img1{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/port-2.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card_bg_img2{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/port-3.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+.blog_content{
+    padding: 30px 30px;
+    color: white;
+    background-image: linear-gradient(326deg,#fd655c,#e47312);
+}
+
+
+.blog_content h1{
+    line-height: 50px;
+    
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.blog_content p{
+    line-height: 25px;
+    padding: 10px 0px;
+    font-size: 17px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.blog_content a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 0px;
+    border-bottom: 2px solid transparent;
+    font-size: 14px
+    
+}
+
+.blog_content a:hover{
+    border-bottom: 2px solid white;
+}
+
+
+.date_month{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.dete{
+    background-color:#e47312;
+    padding: 16px  7px;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.month{
+    background-color: #fff;
+    padding:12px 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(157, 157, 165);
+
+}
+
+/* ========--------blog section end here-------========= */
+
+
+
+/* =======------company logo section start here------========== */
+
+.company_logo_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(268deg,#fd655c,#e47312);
+    padding: 75px;
+    color: white;
+}
+
+.company_logo_container .company_logo{
+    letter-spacing: 3px;
+}
+
+
+.title{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* =======------company logo section end here------========== */
+
+
+/* ======--------footer section start here-------======= */
+
+.footer_main_container{
+    margin: 0% 5%;
+    display: flex;
+    background-color: #0a1229;
+    color: white;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 65vh;
+    padding: 80px 35px;
+    position: relative;
+}
+
+
+.footer_menu{
+    padding-left: 1%;
+    padding-right: 6%;
+    width: 33%;
+}
+
+.footer_menu h4{
+
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.about_nuuk h4{
+    padding-bottom: 30px;
+    
+}
+
+.footer_menu h4 .line{
+    background-color: #fd655c;
+    height: 1px;
+    width: 58%;
+    margin-left: 20px;
+}
+
+.about_nuuk p{
+    line-height: 25px;
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+.about_nuuk a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.about_nuuk a:hover{
+    border-bottom: 2px solid white;
+}
+
+.service_nuuk h4{
+    padding-bottom: 30px;
+}
+
+.service_nuuk ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    
+}
+
+.service_nuuk ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.service_nuuk ul li{
+    list-style: none;
+    margin: 15px 0px;
+}
+
+.contact_nuuk h4{
+    padding-bottom: 30px;
+}
+
+.contact_nuuk h5{
+    padding-bottom: 15px;
+}
+
+.contact_nuuk p{
+    padding-bottom: 10px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer_logo{
+    position: absolute;
+    bottom: 0px ;
+    left: 50px;
+    width: 13%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e47312;
+    cursor: pointer;
+}
+.footer_logo img{
+    width: 60%;
+}
+
+
+
+/* ======--------footer section end here-------======= */
+
+
+
+
+
+/*=====------- media query start here-----======= */
+
+@media screen  and (max-width:1034px){
+    body{
+        margin: 0px;
+    }
+    .info_container{
+        width: 100%;
+        bottom: -120px;
+        justify-content: space-between;
+    }
+
+    .info_container .info_box{
+        padding: 20px 40px;
+       
+    }
+
+    .navbar{
+        width: 100%;
+        margin-top: 0%;
+    }
+
+    .logo{
+        height: 95%;
+        padding-left: 20px ;
+        padding-top: 5px;
+        bottom: 0px;
+    }
+
+
+    .navbar .nav_right_end{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        padding: 20px 0px;
+    }
+
+
+    .navbar .menu_items{
+        display: none;
+    }
+
+    .social_media{
+        bottom: 59px;
+    }
+
+    .services_main_container{
+        margin-top: 50px;
+       
+    }
+
+    .blur_tittle{
+        font-size: 40px;
+        top: 80px;
+    }
+
+    .heading .main_heading h1{
+        font-size: 30px;
+    }
+
+    .heading_text h1 {
+        font-size:46px ;
+    }
+
+    .heading_text p{
+        font-size: 17px;
+    }
+
+    
+
+}
+
+
+@media screen  and (max-width:750px){
+    .service_display-flex{
+        flex-direction: column;
+    }
+
+    .img_content_box{
+        flex-direction: column;
+    }
+
+    .img_content_box .image{
+        width: 100%;
+    }
+
+    .about_content{
+        width: 88%;
+    }
+
+    .flex_about_container{
+        flex-direction: column;
+    }
+
+    .flex_box_a{
+        padding-top: 20px;
+        padding-bottom: 20px;
+     
+     }
+
+     .info_container .info_box h3{
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    .info_container .info_box p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .social_media{
+        bottom: 4px;
+    }
+
+    .img_box{
+        height: 270px;
+    }
+
+    .d_flex_profile_container{
+        flex-direction: column;
+    }
+     
+    .profile_card{
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+
+    .client_main_container{
+        flex-direction: column;
+    }
+
+    .card1{
+        margin-top: 30px;
+        margin-right: 0px;
+        
+    }
+    
+    .card4{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .client_profile_container{
+        flex-direction: column;
+    }
+
+    .profile_box{
+        width: 84%;
+        margin: 20px;
+    }
+
+
+    .client_main_container{
+        justify-content: center;
+    }
+
+    .client_profile_container{
+        justify-content: center;
+    }
+
+
+    .blog_card_container{
+        flex-direction: column;
+    }
+
+    .blog_card{
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .company_logo_container{
+        flex-direction: column;
+    }
+
+    .company_logo_container .company_logo{
+        padding: 50px 0px;
+        text-align: center;
+    }
+
+    .footer_main_container{
+        flex-direction: column;
+        height: auto;
+        padding: 90px 35px;
+    }
+
+    .footer_menu{
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .footer_logo {
+        height: 70px;
+    }
+}
+
+@media screen  and (max-width:480px){
+
+    .logo{
+        width: 40%;
+    }
+
+
+    .info_container{
+        display: none;
+    }
+
+    .social_media{
+        bottom: 0px;
+    }
+
+    .heading{
+        flex-direction: column;
+    }
+
+    .blur_tittle{
+        font-size: 20px;
+        top: 6px;
+    }
+
+    .heading .main_heading h1{
+        font-size: 20px;
+    }
+
+    .heading_text h1{
+        font-size: 33px;
+        line-height: 50px;
+    }
+
+    .services_main_container{
+        padding: 10% 5%;
+    }
+
+    .img_container{
+        flex-direction: column;
+    }
+
+    .img_box{
+        width: 100%;
+    }
+
+    .bg_box h1 {
+        font-size: 31px;
+    }
+
+
+    .bg_box p {
+        font-size: 15px;
+    }
+
+    .bg_box a {
+        font-size: 11px;
+    }  
+    
+    .profile_box{
+        width: 77%;
+        margin: 20px;
+    }
+
+    .footer_logo {
+        height: 50px;
+    }
+}
+
+@media screen  and (max-width:260px){
+    .profile_box{
+        width: 65%;
+        margin: 20px;
+    }
+}
+
+
+/*=====------- media query end here-----======= *
